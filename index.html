@@ -20,10 +20,10 @@
 
     <body>
         <header
-            class="flex justify-between items-center fixed top-0 left-0 w-screen px-12 py-4 z-50 font-syne bg-pink-400 bg-opacity-5 backdrop-blur-lg"
+            class="flex justify-between items-center fixed top-0 left-0 w-full px-8 md:px-12 py-4 z-30 font-syne bg-pink-400 bg-opacity-5 backdrop-blur-sm"
         >
             <img src="/public/image/logo.svg" class="h-8" />
-            <nav class="bg-white flex gap-6 px-8 py-2 rounded-full">
+            <nav class="bg-white hidden lg:flex gap-6 px-8 py-2 rounded-full">
                 <a href="#" class="text-pink-500">Beranda</a>
                 <a href="#">Pengumuman</a>
                 <a href="#">Berita</a>
@@ -32,16 +32,50 @@
             </nav>
             <a
                 href="#"
-                class="px-8 py-2 bg-slate-950 rounded-full text-slate-50"
+                class="px-8 py-2 hidden lg:flex bg-slate-950 rounded-full text-slate-50"
                 >Masuk</a
             >
+            <button
+                class="lg:hidden w-10 h-10 flex flex-col justify-around"
+                onclick="toggleSideBar()"
+            >
+                <span class="w-full h-1 rounded-full bg-slate-500"></span>
+                <span class="w-full h-1 rounded-full bg-slate-500"></span>
+                <span class="w-full h-1 rounded-full bg-slate-500"></span>
+            </button>
         </header>
+        <div
+            id="shade"
+            class="w-screen h-screen fixed z-40 top-0 bg-gray-600 bg-opacity-40 hidden"
+            onclick="toggleSideBar()"
+        ></div>
+        <nav
+            id="sidebar"
+            class="w-1/2 bg-white flex flex-col items-start justify-between p-8 h-screen z-50 fixed -right-[100%] duration-500"
+        >
+            <div class="flex flex-col gap-4">
+                <a href="#" class="text-pink-500">Beranda</a>
+                <a href="#">Pengumuman</a>
+                <a href="#">Berita</a>
+                <a href="#">Tentang</a>
+                <a href="#">Kontak</a>
+            </div>
+            <a
+                href="#"
+                class="px-4 py-1 w-full text-center bg-slate-950 rounded-full text-slate-50"
+                >Masuk</a
+            >
+        </nav>
         <section
             id="hero"
-            class="flex items-center bg-main bg-cover min-h-screen pb-10 relative"
+            class="flex flex-col-reverse lg:flex-row items-center bg-main bg-cover min-h-screen pb-10 relative"
         >
-            <aside class="w-1/2 ms-12 flex flex-col items-start gap-6">
-                <h2 class="flex flex-col text-6xl font-bold font-syne">
+            <aside
+                class="lg:w-1/2 lg:ms-12 flex flex-col items-center lg:items-start gap-6"
+            >
+                <h2
+                    class="flex flex-col items-center lg:items-start text-4xl md:text-6xl font-bold font-syne"
+                >
                     <span>Beasiswa</span>
                     <span
                         class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
@@ -49,9 +83,9 @@
                     >
                     <span>Jember</span>
                 </h2>
-                <p class="flex flex-col">
-                    <span>Jember keren, Mahasiswa keren</span>
-                    <span>berprestasi dengan beasiswa pemkab jember</span>
+                <p class="flex flex-col items-center lg:items-start">
+                    <span class="text-center">Jember keren, Mahasiswa keren</span>
+                    <span class="text-center">berprestasi dengan beasiswa pemkab jember</span>
                 </p>
                 <a
                     href="#"
@@ -59,21 +93,20 @@
                     >Selengkapnya</a
                 >
             </aside>
-            <aside class="w-1/2">
+            <aside class="px-8 lg:w-1/2">
                 <img src="/public/image/bupati.png" />
             </aside>
-            <img
-                src="/public/image/wave.svg"
-                class="absolute bottom-0 w-full"
-            />
         </section>
-        <section id="about" class="flex px-12 py-8 font-syne">
+        <section
+            id="about"
+            class="flex flex-col lg:flex-row gap-4 px-8 lg:px-12 py-8 font-syne"
+        >
             <aside class="flex-grow flex justify-center">
                 <img src="/public/image/illustration1.png" />
             </aside>
-            <aside class="w-2/5 flex flex-col text-slate-500">
+            <aside class="lg:w-2/5 flex flex-col text-slate-500">
                 <h3
-                    class="text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
+                    class="text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99% text-center lg:text-left"
                 >
                     Beasiswa Pemkab Jember?
                 </h3>
@@ -93,21 +126,23 @@
         </section>
         <section
             id="kategori"
-            class="flex flex-col items-center py-8 font-syne w-full"
+            class="flex flex-col items-center py-8 px-8 lg:px-12 font-syne w-full"
         >
             <h3
                 class="text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
             >
                 Kategori
             </h3>
-            <p class="text-lg">Tentukan kategori beasiswa dengan keadaanmu</p>
+            <p class="text-lg text-center">
+                Tentukan kategori beasiswa dengan keadaanmu
+            </p>
             <section
                 id="slide-kategori"
-                class="flex w-full overflow-x-scroll no-scrollbar p-8"
+                class="flex flex-col md:flex-row flex-wrap xl:flex-nowrap justify-center w-full lg:p-8 lg:overflow-x-scroll no-scrollbar"
             >
-                <div class="w-1/4 px-4 pb-8">
+                <div class="p-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/4 xl:pb-8">
                     <div
-                        class="bg-slate-50 hover:bg-gradient-to-tr from-pink-200 to-purple-400 h-full flex flex-col justify-between gap-2 items-center p-8 rounded-lg shadow-lg hover:shadow-xl"
+                        class="bg-slate-50 hover:bg-gradient-to-tr from-pink-200 to-purple-400 h-full flex flex-col justify-between gap-2 items-center p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-500"
                     >
                         <img
                             src="/public/image/icon1.png"
@@ -121,7 +156,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="px-4 w-1/4 pt-8">
+                <div class="p-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/4 xl:pt-8">
                     <div
                         class="bg-slate-50 hover:bg-gradient-to-tr from-pink-200 to-purple-400 h-full flex flex-col justify-between gap-2 items-center p-8 rounded-lg shadow-lg hover:shadow-xl"
                     >
@@ -138,7 +173,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="px-4 w-1/4 pb-8">
+                <div class="p-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/4 xl:pb-8">
                     <div
                         class="bg-slate-50 hover:bg-gradient-to-tr from-pink-200 to-purple-400 h-full flex flex-col justify-between gap-2 items-center p-8 rounded-lg shadow-lg hover:shadow-xl"
                     >
@@ -154,7 +189,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="px-4 w-1/4 pt-8">
+                <div class="p-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/4 xl:pt-8">
                     <div
                         class="bg-slate-50 hover:bg-gradient-to-tr from-pink-200 to-purple-400 h-full flex flex-col justify-between gap-2 items-center p-8 rounded-lg shadow-lg hover:shadow-xl"
                     >
@@ -171,7 +206,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="px-4 w-1/4 pb-8">
+                <div class="p-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/4 xl:pb-8">
                     <div
                         class="bg-slate-50 hover:bg-gradient-to-tr from-pink-200 to-purple-400 h-full flex flex-col justify-between gap-2 items-center p-8 rounded-lg shadow-lg hover:shadow-xl"
                     >
@@ -192,14 +227,14 @@
         </section>
         <section
             id="syarat"
-            class="flex flex-col items-center bg-pink-400 bg-opacity-25 px-12 py-8 font-syne"
+            class="flex flex-col items-center bg-pink-400 bg-opacity-25 px-8 lg:px-12 py-8 font-syne"
         >
             <h3
                 class="text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
             >
                 Syarat
             </h3>
-            <ul class="flex flex-col w-2/3 gap-4">
+            <ul class="flex flex-col lg:w-2/3 gap-4">
                 <li class="flex items-start gap-2">
                     <img src="/public/image/check.svg" />
                     <p class="text-lg font-semibold text-wrap">
@@ -225,15 +260,19 @@
         </section>
         <section
             id="alur-pendaftaran"
-            class="flex flex-col items-center px-12 py-8 mt-4 font-syne"
+            class="flex flex-col items-center px-8 lg:px-12 py-8 mt-4 font-syne"
         >
             <h3
                 class="text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
             >
                 Alur Pendaftaran
             </h3>
-            <div class="w-full shadow-xl bg-slate-50 rounded-lg flex p-8 justify-between">
-                <div class="flex-grow flex flex-col items-start gap-8">
+            <div
+                class="w-full shadow-xl bg-slate-50 rounded-lg flex flex-wrap lg:flex-nowrap gap-4 p-8 items-center justify-between"
+            >
+                <div
+                    class="flex-grow flex flex-col items-center lg:mx-auto lg:items-start gap-8"
+                >
                     <img src="/public/image/step1.svg" />
                     <div>
                         <h4 class="font-semibold text-lg">Login / Register</h4>
@@ -241,7 +280,9 @@
                         <p>Lakukan pendaftaran akun</p>
                     </div>
                 </div>
-                <div class="flex-grow flex flex-col items-start gap-8 pt-16">
+                <div
+                    class="flex-grow flex flex-col items-center lg:items-start gap-8 lg:pt-16"
+                >
                     <img src="/public/image/step2.svg" />
                     <div>
                         <h4 class="font-semibold text-lg">Login / Register</h4>
@@ -249,7 +290,9 @@
                         <p>Lakukan pendaftaran akun</p>
                     </div>
                 </div>
-                <div class="flex-grow flex flex-col items-start gap-8">
+                <div
+                    class="flex-grow flex flex-col items-center lg:items-start gap-8"
+                >
                     <img src="/public/image/step3.svg" />
                     <div>
                         <h4 class="font-semibold text-lg">Login / Register</h4>
@@ -257,7 +300,9 @@
                         <p>Lakukan pendaftaran akun</p>
                     </div>
                 </div>
-                <div class="flex-grow flex flex-col items-start gap-8 pt-16">
+                <div
+                    class="flex-grow flex flex-col items-center lg:items-start gap-8 lg:pt-16"
+                >
                     <img src="/public/image/step4.svg" />
                     <div>
                         <h4 class="font-semibold text-lg">Login / Register</h4>
@@ -265,7 +310,9 @@
                         <p>Lakukan pendaftaran akun</p>
                     </div>
                 </div>
-                <div class="flex-grow flex flex-col items-start gap-8">
+                <div
+                    class="flex-grow flex flex-col items-center lg:items-start gap-8"
+                >
                     <img src="/public/image/step5.svg" />
                     <div>
                         <h4 class="font-semibold text-lg">Login / Register</h4>
@@ -277,39 +324,95 @@
         </section>
         <section
             id="berita"
-            class="flex flex-col items-center px-12 py-8 font-syne"
+            class="flex flex-col items-center px-8 lg:px-12 py-8 font-syne"
         >
             <h3
                 class="text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
             >
                 Berita
             </h3>
-            <div class="w-full flex flex-wrap">
-                <div class="w-1/3 px-2">
-                    <div class="w-full h-full p-2 bg-gray-50 rounded-lg shadow-lg relative">
-                        <a href="/contoh-berita" class="w-full h-full absolute top-0 left-0"></a>
-                        <div class="w-full h-[25vw] bg-slate-600"></div>
-                        <p class="flex gap-2 items-center"><img src="/public/image/calendar-icon.svg">01 Januari 2024</p>
-                        <h4 class="font-semibold text-lg">Lorem ipsum dolor sit amet.</h4>
+            <div class="w-full flex flex-wrap gap-4 lg:gap-0">
+                <div class="w-full lg:w-1/3 lg:px-2">
+                    <div
+                        class="w-full h-full p-2 bg-gray-50 rounded-lg shadow-lg relative"
+                    >
+                        <a
+                            href="/contoh-berita"
+                            class="w-full h-full absolute top-0 left-0"
+                        ></a>
+                        <div class="w-full h-[50vw] lg:h-[25vw] bg-slate-600">
+                            <img
+                                src="/public/image/berita1.png"
+                                class="w-full h-full object-cover object-center"
+                            />
+                        </div>
+                        <p class="flex gap-2 items-center">
+                            <img src="/public/image/calendar-icon.svg" />01
+                            Januari 2024
+                        </p>
+                        <h4 class="font-semibold text-lg">
+                            Lorem ipsum dolor sit amet.
+                        </h4>
                     </div>
                 </div>
-                <div class="w-1/3 px-2">
-                    <div class="w-full h-full p-2 bg-gray-50 rounded-lg shadow-lg relative">
-                        <a href="/contoh-berita" class="w-full h-full absolute top-0 left-0"></a>
-                        <div class="w-full h-[25vw] bg-slate-600"></div>
-                        <p class="flex gap-2 items-center"><img src="/public/image/calendar-icon.svg">01 Januari 2024</p>
-                        <h4 class="font-semibold text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, voluptate?</h4>
+                <div class="w-full lg:w-1/3 lg:px-2">
+                    <div
+                        class="w-full h-full p-2 bg-gray-50 rounded-lg shadow-lg relative"
+                    >
+                        <a
+                            href="/contoh-berita"
+                            class="w-full h-full absolute top-0 left-0"
+                        ></a>
+                        <div class="w-full h-[50vw] lg:h-[25vw] bg-slate-600">
+                            <img
+                                src="/public/image/berita1.png"
+                                class="w-full h-full object-cover object-center"
+                            />
+                        </div>
+                        <p class="flex gap-2 items-center">
+                            <img src="/public/image/calendar-icon.svg" />01
+                            Januari 2024
+                        </p>
+                        <h4 class="font-semibold text-lg">
+                            Lorem ipsum dolor sit amet.
+                        </h4>
                     </div>
                 </div>
-                <div class="w-1/3 px-2">
-                    <div class="w-full h-full p-2 bg-gray-50 rounded-lg shadow-lg relative">
-                        <a href="/contoh-berita" class="w-full h-full absolute top-0 left-0"></a>
-                        <div class="w-full h-[25vw] bg-slate-600"></div>
-                        <p class="flex gap-2 items-center"><img src="/public/image/calendar-icon.svg">01 Januari 2024</p>
-                        <h4 class="font-semibold text-lg">Lorem ipsum dolor sit amet.</h4>
+                <div class="w-full lg:w-1/3 lg:px-2">
+                    <div
+                        class="w-full h-full p-2 bg-gray-50 rounded-lg shadow-lg relative"
+                    >
+                        <a
+                            href="/contoh-berita"
+                            class="w-full h-full absolute top-0 left-0"
+                        ></a>
+                        <div class="w-full h-[50vw] lg:h-[25vw] bg-slate-600">
+                            <img
+                                src="/public/image/berita1.png"
+                                class="w-full h-full object-cover object-center"
+                            />
+                        </div>
+                        <p class="flex gap-2 items-center">
+                            <img src="/public/image/calendar-icon.svg" />01
+                            Januari 2024
+                        </p>
+                        <h4 class="font-semibold text-lg">
+                            Lorem ipsum dolor sit amet.
+                        </h4>
                     </div>
                 </div>
             </div>
         </section>
+        <script>
+            function toggleSideBar() {
+                document.querySelector('#shade').classList.toggle('hidden')
+                document
+                    .querySelector('#sidebar')
+                    .classList.toggle('-right-[100%]')
+                document
+                .querySelector('#sidebar')
+                .classList.toggle('-right-0')
+            }
+        </script>
     </body>
 </html>
