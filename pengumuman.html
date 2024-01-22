@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>J-Bestie | Home</title>
+        <link rel="stylesheet" href="/public/style/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="shortcut icon"
+            href="/public/image/icon.svg"
+            type="image/x-icon"
+        />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <header
+            class="flex justify-between items-center fixed top-0 left-0 w-full px-8 md:px-12 py-4 z-30 font-syne bg-pink-400 bg-opacity-5 backdrop-blur-sm"
+        >
+            <img src="/public/image/logo.svg" class="h-8" />
+            <nav class="bg-white hidden lg:flex gap-6 px-8 py-2 rounded-full">
+                <a href="/">Beranda</a>
+                <a href="/pengumuman.html" class="text-pink-500">Pengumuman</a>
+                <a href="#">Berita</a>
+                <a href="#">Tentang</a>
+                <a href="#">Kontak</a>
+            </nav>
+            <a
+                href="#"
+                class="px-8 py-2 hidden lg:flex bg-slate-950 rounded-full text-slate-50"
+                >Masuk</a
+            >
+            <button
+                class="lg:hidden w-10 h-10 flex flex-col justify-around"
+                onclick="toggleSideBar()"
+            >
+                <span class="w-full h-1 rounded-full bg-slate-500"></span>
+                <span class="w-full h-1 rounded-full bg-slate-500"></span>
+                <span class="w-full h-1 rounded-full bg-slate-500"></span>
+            </button>
+        </header>
+        <div
+            id="shade"
+            class="w-screen h-screen fixed z-40 top-0 bg-gray-600 bg-opacity-40 hidden"
+            onclick="toggleSideBar()"
+        ></div>
+        <nav
+            id="sidebar"
+            class="w-1/2 bg-white flex flex-col items-start justify-between p-8 h-screen z-50 fixed -right-[100%] duration-500"
+        >
+            <div class="flex flex-col gap-4">
+                <a href="/">Beranda</a>
+                <a href="/pengumuman.html" class="text-pink-500">Pengumuman</a>
+                <a href="#">Berita</a>
+                <a href="#">Tentang</a>
+                <a href="#">Kontak</a>
+            </div>
+            <a
+                href="#"
+                class="px-4 py-1 w-full text-center bg-slate-950 rounded-full text-slate-50"
+                >Masuk</a
+            >
+        </nav>
+        <section class="font-syne">
+            <h1
+                class="text-4xl md:text-6xl pt-24 pb-4 text-center bg-pink-400 bg-opacity-25"
+            >
+                Pengumuman
+            </h1>
+            <div class="px-8 lg:px-12 flex flex-col gap-4 py-10 min-h-[50vh]">
+                <div class="shadow-lg px-8 py-4 rounded-lg">
+                    <p class="flex gap-2">
+                        <img src="/public/image/calendar-icon.svg" />
+                        01 Januari 2024
+                    </p>
+                    <h3 class="font-semibold text-lg">Template SPTJM Beasiswa Pemkab Jember 2024</h3>
+                    <p class="text-slate-500">Template SPTJM digunakan mahasiswa untuk mendaftarkan beasiswa pemkab</p>
+                </div>
+                <div class="shadow-lg px-8 py-4 rounded-lg">
+                    <p class="flex gap-2">
+                        <img src="/public/image/calendar-icon.svg" />
+                        01 Januari 2024
+                    </p>
+                    <h3 class="font-semibold text-lg">Template SPTJM Beasiswa Pemkab Jember 2024</h3>
+                    <p class="text-slate-500">Template SPTJM digunakan mahasiswa untuk mendaftarkan beasiswa pemkab</p>
+                </div>
+                <div class="shadow-lg px-8 py-4 rounded-lg">
+                    <p class="flex gap-2">
+                        <img src="/public/image/calendar-icon.svg" />
+                        01 Januari 2024
+                    </p>
+                    <h3 class="font-semibold text-lg">Template SPTJM Beasiswa Pemkab Jember 2024</h3>
+                    <p class="text-slate-500">Template SPTJM digunakan mahasiswa untuk mendaftarkan beasiswa pemkab</p>
+                </div>
+                <div class="shadow-lg px-8 py-4 rounded-lg">
+                    <p class="flex gap-2">
+                        <img src="/public/image/calendar-icon.svg" />
+                        01 Januari 2024
+                    </p>
+                    <h3 class="font-semibold text-lg">Template SPTJM Beasiswa Pemkab Jember 2024</h3>
+                    <p class="text-slate-500">Template SPTJM digunakan mahasiswa untuk mendaftarkan beasiswa pemkab</p>
+                </div>
+            </div>
+        </section>
+        <footer
+            class="py-8 px-8 lg:px-12 font-syne rounded-lg bg-pink-400 bg-opacity-25"
+        >
+            <div class="p-8 bg-slate-50 rounded-lg flex">
+                <aside class="flex flex-col items-start gap-2 w-1/3 px-2">
+                    <img src="/public/image/logo.svg" />
+                    <div class="flex flex-col gap-1">
+                        <p class="text-lg text-slate-500">
+                            Jl. DR. Soebandi No.29, Jemberlor, Kec. Patrang,
+                            Kabupaten Jember, 68118
+                        </p>
+                        <p class="text-lg text-slate-500">dispendik</p>
+                        <p class="text-lg text-slate-500">0331487028</p>
+                    </div>
+                    <h4
+                        class="font-semibold text-xl text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
+                    >
+                        IKUTI KAMI
+                    </h4>
+                    <div class="flex gap-2">
+                        <a
+                            href="#"
+                            class="flex justify-center items-center px-3 py-3 bg-white rounded-full"
+                            ><img src="/public/image/instagram.svg"
+                        /></a>
+                        <a
+                            href="#"
+                            class="flex justify-center items-center px-3 py-3 bg-white rounded-full"
+                            ><img src="/public/image/twitter.svg"
+                        /></a>
+                        <a
+                            href="#"
+                            class="flex justify-center items-center px-3 py-3 bg-white rounded-full"
+                            ><img src="/public/image/youtube.svg"
+                        /></a>
+                        <a
+                            href="#"
+                            class="flex justify-center items-center px-3 py-3 bg-white rounded-full"
+                            ><img src="/public/image/facebook.svg"
+                        /></a>
+                    </div>
+                </aside>
+                <aside class="flex flex-col items-start gap-2 w-1/3 px-2">
+                    <h4
+                        class="font-semibold text-xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
+                    >
+                        MENU UTAMA
+                    </h4>
+                    <div class="flex flex-col gap-1">
+                        <a href="#" class="text-lg text-slate-500">Beranda</a>
+                        <a href="#" class="text-lg text-slate-500"
+                            >Pengumuman</a
+                        >
+                        <a href="#" class="text-lg text-slate-500">Tentang</a>
+                        <a href="#" class="text-lg text-slate-500">Kontak</a>
+                    </div>
+                </aside>
+                <aside class="flex flex-col items-start gap-2 w-1/3 px-2">
+                    <h4
+                        class="font-semibold text-xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
+                    >
+                        TERKAIT
+                    </h4>
+                    <div class="flex flex-col gap-1">
+                        <a href="#" class="text-lg text-slate-500"
+                            >Beasiswa Pemkab 2024</a
+                        >
+                        <a href="#" class="text-lg text-slate-500"
+                            >Beasiswa Pemkab 2023</a
+                        >
+                        <a href="#" class="text-lg text-slate-500"
+                            >Beasiswa Pemkab 2022</a
+                        >
+                        <a href="#" class="text-lg text-slate-500"
+                            >Beasiswa Pemkab 2021</a
+                        >
+                    </div>
+                </aside>
+            </div>
+            <p class="text-center text-slate-500 text-lg mt-4">
+                Copyright 2024 J-Bestie | DInas Pendidikan Kabupaten Jember
+            </p>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init()
+            function toggleSideBar() {
+                document.querySelector('#shade').classList.toggle('hidden')
+                document
+                    .querySelector('#sidebar')
+                    .classList.toggle('-right-[100%]')
+                document.querySelector('#sidebar').classList.toggle('-right-0')
+            }
+        </script>
+    </body>
+</html>
