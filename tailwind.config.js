@@ -8,6 +8,7 @@ module.exports = {
       },
       backgroundImage: {
         "main": "url('/public/image/background.png')",
+        "grad": "url('/public/image/gradient.png')",
       }
     },
   },
