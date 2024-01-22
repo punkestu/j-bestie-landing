@@ -432,9 +432,9 @@
                 Kata Mereka Penerima<br />
                 Beasiswa Pemkab
             </h4>
-            <div class="flex justify-center gap-8 pt-4">
+            <div class="flex flex-wrap justify-center gap-8 pt-4">
                 <div
-                    class="w-1/4 p-8 rounded-lg shadow-lg flex flex-col justify-between gap-8"
+                    class="w-full lg:w-1/4 p-8 rounded-lg shadow-lg flex flex-col justify-between gap-8"
                 >
                     <div class="flex flex-col gap-2">
                         <div class="flex items-center">
@@ -458,7 +458,7 @@
                     </div>
                 </div>
                 <div
-                    class="w-1/4 p-8 rounded-lg shadow-lg flex flex-col justify-between gap-8"
+                    class="w-full lg:w-1/4 p-8 rounded-lg shadow-lg flex flex-col justify-between gap-8"
                 >
                     <div class="flex flex-col gap-2">
                         <div class="flex items-center">
@@ -482,7 +482,7 @@
                     </div>
                 </div>
                 <div
-                    class="w-1/4 p-8 rounded-lg shadow-lg flex flex-col justify-between gap-8"
+                    class="w-full lg:w-1/4 p-8 rounded-lg shadow-lg flex flex-col justify-between gap-8"
                 >
                     <div class="flex flex-col gap-2">
                         <div class="flex items-center">
@@ -526,9 +526,9 @@
                     <button
                         class="w-full flex justify-between items-center font-semibold"
                     >
-                        Untuk semester berapa beasiswa tersebut?<img
-                            src="/public/image/more-icon.svg"
-                        />
+                        <span class="text-left"
+                            >Untuk semester berapa beasiswa tersebut?</span
+                        ><img src="/public/image/more-icon.svg" />
                     </button>
                     <div class="h-0 overflow-x-hidden duration-500">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -545,9 +545,9 @@
                     <button
                         class="w-full flex justify-between items-center font-semibold"
                     >
-                        Untuk semester berapa beasiswa tersebut?<img
-                            src="/public/image/more-icon.svg"
-                        />
+                        <span class="text-left"
+                            >Untuk semester berapa beasiswa tersebut?</span
+                        ><img src="/public/image/more-icon.svg" />
                     </button>
                     <div class="h-0 overflow-x-hidden duration-500">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -564,9 +564,9 @@
                     <button
                         class="w-full flex justify-between items-center font-semibold"
                     >
-                        Untuk semester berapa beasiswa tersebut?<img
-                            src="/public/image/more-icon.svg"
-                        />
+                        <span class="text-left"
+                            >Untuk semester berapa beasiswa tersebut?</span
+                        ><img src="/public/image/more-icon.svg" />
                     </button>
                     <div class="h-0 overflow-x-hidden duration-500">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -583,9 +583,9 @@
                     <button
                         class="w-full flex justify-between items-center font-semibold"
                     >
-                        Untuk semester berapa beasiswa tersebut?<img
-                            src="/public/image/more-icon.svg"
-                        />
+                        <span class="text-left"
+                            >Untuk semester berapa beasiswa tersebut?</span
+                        ><img src="/public/image/more-icon.svg" />
                     </button>
                     <div class="h-0 overflow-x-hidden duration-500">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -602,9 +602,9 @@
                     <button
                         class="w-full flex justify-between items-center font-semibold"
                     >
-                        Untuk semester berapa beasiswa tersebut?<img
-                            src="/public/image/more-icon.svg"
-                        />
+                        <span class="text-left"
+                            >Untuk semester berapa beasiswa tersebut?</span
+                        ><img src="/public/image/more-icon.svg" />
                     </button>
                     <div class="h-0 overflow-x-hidden duration-500">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -615,22 +615,28 @@
                     </div>
                 </div>
             </div>
-            <p class="text-slate-500 text-lg">
+            <p class="text-slate-500 text-lg text-center">
                 Tidak ada pertanyaan yang ingin kamu tanyakan di atas?
             </p>
             <a
                 href="#"
-                class="border-2 border-pink-600 text-pink-600 px-8 py-2 font-medium text-2xl rounded-full hover:bg-pink-600 hover:text-pink-100"
+                class="border-2 border-pink-600 text-pink-600 px-8 py-2 font-medium text-xl lg:text-2xl text-center rounded-full hover:bg-pink-600 hover:text-pink-100"
                 >Ajukan Pertanyaan</a
             >
         </section>
         <footer
             class="py-8 px-8 lg:px-12 font-syne rounded-lg bg-pink-400 bg-opacity-25"
         >
-            <div class="p-8 bg-slate-50 rounded-lg flex">
-                <aside class="flex flex-col items-start gap-2 w-1/3 px-2">
+            <div
+                class="p-8 bg-slate-50 rounded-lg flex flex-col-reverse md:flex-row items-center md:items-start gap-2 md:gap-0"
+            >
+                <aside
+                    class="flex flex-col items-center md:items-start gap-2 w-full md:w-1/3 md:px-2"
+                >
                     <img src="/public/image/logo.svg" />
-                    <div class="flex flex-col gap-1">
+                    <div
+                        class="flex flex-col gap-1 items-center md:items-start"
+                    >
                         <p class="text-lg text-slate-500">
                             Jl. DR. Soebandi No.29, Jemberlor, Kec. Patrang,
                             Kabupaten Jember, 68118
@@ -666,30 +672,40 @@
                         /></a>
                     </div>
                 </aside>
-                <aside class="flex flex-col items-start gap-2 w-1/3 px-2">
+                <aside class="flex flex-col items-center md:items-start gap-2 md:w-1/3 px-2">
                     <h4
                         class="font-semibold text-xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
                     >
                         MENU UTAMA
                     </h4>
-                    <div class="flex flex-col gap-1">
+                    <div class="flex flex-col items-center md:items-start gap-1">
                         <a href="#" class="text-lg text-slate-500">Beranda</a>
-                        <a href="#" class="text-lg text-slate-500">Pengumuman</a>
+                        <a href="#" class="text-lg text-slate-500"
+                            >Pengumuman</a
+                        >
                         <a href="#" class="text-lg text-slate-500">Tentang</a>
                         <a href="#" class="text-lg text-slate-500">Kontak</a>
                     </div>
                 </aside>
-                <aside class="flex flex-col items-start gap-2 w-1/3 px-2">
+                <aside class="flex flex-col items-center md:items-start gap-2 md:w-1/3 px-2">
                     <h4
                         class="font-semibold text-xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
                     >
                         TERKAIT
                     </h4>
-                    <div class="flex flex-col gap-1">
-                        <a href="#" class="text-lg text-slate-500">Beasiswa Pemkab 2024</a>
-                        <a href="#" class="text-lg text-slate-500">Beasiswa Pemkab 2023</a>
-                        <a href="#" class="text-lg text-slate-500">Beasiswa Pemkab 2022</a>
-                        <a href="#" class="text-lg text-slate-500">Beasiswa Pemkab 2021</a>
+                    <div class="flex flex-col items-center md:items-start gap-1">
+                        <a href="#" class="text-lg text-slate-500"
+                            >Beasiswa Pemkab 2024</a
+                        >
+                        <a href="#" class="text-lg text-slate-500"
+                            >Beasiswa Pemkab 2023</a
+                        >
+                        <a href="#" class="text-lg text-slate-500"
+                            >Beasiswa Pemkab 2022</a
+                        >
+                        <a href="#" class="text-lg text-slate-500"
+                            >Beasiswa Pemkab 2021</a
+                        >
                     </div>
                 </aside>
             </div>
