@@ -40,7 +40,7 @@
                 >Masuk</a
             >
             <button
-                class="lg:hidden w-10 h-10 flex flex-col justify-around"
+                class="lg:hidden w-5 h-5 flex flex-col justify-around"
                 onclick="toggleSideBar()"
             >
                 <span class="w-full h-1 rounded-full bg-slate-500"></span>
@@ -71,8 +71,11 @@
             >
         </nav>
         <section class="flex flex-col items-center font-syne">
+            <div
+                class="absolute top-0 -z-10 left-0 w-full h-[30vh] bg-main bg-cover"
+            ></div>
             <h1
-                class="w-full text-4xl md:text-6xl pt-24 pb-4 text-center bg-grad bg-cover"
+                class="w-full text-4xl md:text-6xl pt-24 pb-4 text-center"
             >
                 Berita
             </h1>
@@ -244,7 +247,7 @@
                     <div
                         class="flex flex-col gap-1 items-center md:items-start"
                     >
-                        <p class="text-lg text-slate-500">
+                        <p class="text-lg text-slate-500 text-center md:text-left">
                             Jl. DR. Soebandi No.29, Jemberlor, Kec. Patrang,
                             Kabupaten Jember, 68118
                         </p>
