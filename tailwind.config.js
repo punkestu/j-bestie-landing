@@ -5,13 +5,14 @@ module.exports = {
         extend: {
             fontFamily: {
                 syne: 'Syne',
+                poppins: 'Poppins',
             },
             backgroundImage: {
                 main: "url('/public/image/background.png')",
                 grad: "url('/public/image/gradient.png')",
             },
             animation: {
-                'infinite-scroll': 'infinite-scroll 25s linear infinite',
+                'infinite-scroll': 'infinite-scroll 80s linear infinite',
             },
             keyframes: {
                 'infinite-scroll': {
