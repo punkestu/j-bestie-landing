@@ -175,8 +175,8 @@
             id="kategori"
             class="flex flex-col items-center py-8 px-8 lg:px-12 xl:px-32 font-syne w-full"
             data-aos="fade-up"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="900"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="900"
         >
             <h3
                 class="text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
@@ -302,10 +302,12 @@
             >
                 Syarat
             </h3>
-            <ul class="flex flex-col lg:w-2/3 gap-4" 
-            data-aos="fade-right"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="900">
+            <ul
+                class="flex flex-col lg:w-2/3 gap-4"
+                data-aos="fade-right"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900"
+            >
                 <li class="flex items-start gap-2">
                     <img src="/public/image/check.svg" />
                     <p class="text-lg font-semibold text-wrap">
@@ -350,8 +352,8 @@
             id="alur-pendaftaran"
             class="flex flex-col items-center px-8 lg:px-12 xl:px-32 py-8 mt-4 font-syne"
             data-aos="fade-up"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="900"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="900"
         >
             <h3
                 class="text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
@@ -436,8 +438,8 @@
             id="berita"
             class="flex flex-col items-center px-8 lg:px-12 xl:px-32 py-8 font-syne"
             data-aos="fade-right"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="900"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="900"
         >
             <h3
                 class="text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
@@ -528,10 +530,12 @@
             >
                 Cerita Penerima Beasiswa
             </h3>
-            <h4 class="text-4xl"
-            data-aos="fade-right"
+            <h4
+                class="text-4xl"
+                data-aos="fade-right"
                 data-aos-easing="ease-in-sine"
-                data-aos-duration="900">
+                data-aos-duration="900"
+            >
                 Kata Mereka Penerima<br />
                 Beasiswa Pemkab
             </h4>
@@ -539,9 +543,9 @@
                 <div
                     class="w-full lg:w-1/4 p-8 rounded-lg shadow-lg flex flex-col justify-between gap-8"
                     data-aos="fade-down"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="900"
-                data-aos-delay="200"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="900"
+                    data-aos-delay="200"
                 >
                     <div class="flex flex-col gap-2">
                         <div class="flex items-center">
@@ -568,9 +572,9 @@
                 <div
                     class="w-full lg:w-1/4 p-8 rounded-lg shadow-lg flex flex-col justify-between gap-8"
                     data-aos="fade-down"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="900"
-                data-aos-delay="500"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="900"
+                    data-aos-delay="500"
                 >
                     <div class="flex flex-col gap-2">
                         <div class="flex items-center">
@@ -602,9 +606,9 @@
                 <div
                     class="w-full lg:w-1/4 p-8 rounded-lg shadow-lg flex flex-col justify-between gap-8"
                     data-aos="fade-down"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="900"
-                data-aos-delay="800"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="900"
+                    data-aos-delay="800"
                 >
                     <div class="flex flex-col gap-2">
                         <div class="flex items-center">
@@ -632,18 +636,8 @@
         </section>
         <section
             x-data="{}"
-            x-init="$nextTick(() => {
-        let ul = $refs.logos;
-        ul.insertAdjacentHTML('afterend', ul.outerHTML);
-        ul.nextSibling.setAttribute('aria-hidden', 'true');
-    })"
+            x-init="$nextTick(() => {let ul = $refs.logos;ul.insertAdjacentHTML('afterend', ul.outerHTML);ul.nextSibling.setAttribute('aria-hidden', 'true');})"
             id="universitas"
-            x-data="{}"
-            x-init="$nextTick(() => {
-            let ul = $refs.logos;
-            ul.insertAdjacentHTML('afterend', ul.outerHTML);
-            ul.nextSibling.setAttribute('aria-hidden', 'true');
-        })"
             class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] bg-grad bg-cover py-8"
         >
             <ul
