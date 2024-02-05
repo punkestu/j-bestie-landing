@@ -30,16 +30,24 @@
         />
     </head>
 
-    <body>
+    <body class="w-screen overflow-x-hidden">
         <header
             class="flex justify-between items-center fixed top-0 left-0 w-full px-8 md:px-12 py-4 z-30 font-syne bg-pink-400 bg-opacity-5 backdrop-blur-sm"
         >
             <a href="/"><img src="/public/image/logo.svg" class="h-8" /></a>
             <nav class="bg-white hidden lg:flex gap-6 px-8 py-2 rounded-full">
                 <a href="/" class="text-pink-500">Beranda</a>
-                <a href="/berita.html">Berita</a>
-                <a href="/about.html">Tentang</a>
-                <a href="https://www.instagram.com/dispendik.jember/">Kontak</a>
+                <a href="/berita.html" class="hover:text-pink-500 duration-200"
+                    >Berita</a
+                >
+                <a href="/about.html" class="hover:text-pink-500 duration-200"
+                    >Tentang</a
+                >
+                <a
+                    href="https://www.instagram.com/dispendik.jember/"
+                    class="hover:text-pink-500 duration-200"
+                    >Kontak</a
+                >
             </nav>
             <a
                 href="#"
@@ -129,10 +137,20 @@
             id="about"
             class="flex flex-col lg:flex-row justify-center items-center gap-4 px-8 lg:px-12 py-8 font-syne"
         >
-            <aside class="lg:w-1/2 flex justify-center">
+            <aside
+                class="lg:w-1/2 flex justify-center"
+                data-aos="fade-right"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900"
+            >
                 <img src="/public/image/illustration1.png" />
             </aside>
-            <aside class="lg:w-1/2 flex flex-col text-slate-500">
+            <aside
+                class="lg:w-1/2 flex flex-col text-slate-500"
+                data-aos="fade-left"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900"
+            >
                 <h3
                     class="text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99% text-center lg:text-left"
                 >
@@ -156,6 +174,9 @@
         <section
             id="kategori"
             class="flex flex-col items-center py-8 px-8 lg:px-12 font-syne w-full"
+            data-aos="fade-up"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900"
         >
             <h3
                 class="text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
@@ -169,7 +190,9 @@
                 id="slide-kategori"
                 class="flex flex-col md:flex-row flex-wrap xl:flex-nowrap justify-center w-full lg:p-8 lg:overflow-x-scroll no-scrollbar gap-4"
             >
-                <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 lg:hover:w-1/2 xl:pb-8 duration-500">
+                <div
+                    class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 lg:hover:w-1/2 xl:pb-8 duration-500"
+                >
                     <a
                         href="/kategori.html"
                         class="bg-slate-50 hover:bg-grad hover:bg-cover h-full flex flex-col justify-between gap-2 items-center p-8 rounded-lg shadow-lg hover:shadow-xl duration-500"
@@ -186,7 +209,9 @@
                         </p>
                     </a>
                 </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 lg:hover:w-1/2 xl:pt-8 duration-500">
+                <div
+                    class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 lg:hover:w-1/2 xl:pt-8 duration-500"
+                >
                     <a
                         href="/kategori.html"
                         class="bg-slate-50 hover:bg-grad hover:bg-cover h-full flex flex-col justify-between gap-2 items-center p-8 rounded-lg shadow-lg hover:shadow-xl duration-500"
@@ -204,7 +229,9 @@
                         </p>
                     </a>
                 </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 lg:hover:w-1/2 xl:pb-8 duration-500">
+                <div
+                    class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 lg:hover:w-1/2 xl:pb-8 duration-500"
+                >
                     <a
                         href="/kategori.html"
                         class="bg-slate-50 hover:bg-grad hover:bg-cover h-full flex flex-col justify-between gap-2 items-center p-8 rounded-lg shadow-lg hover:shadow-xl duration-500"
@@ -221,7 +248,9 @@
                         </p>
                     </a>
                 </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 lg:hover:w-1/2 xl:pt-8 duration-500">
+                <div
+                    class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 lg:hover:w-1/2 xl:pt-8 duration-500"
+                >
                     <a
                         href="/kategori.html"
                         class="bg-slate-50 hover:bg-grad hover:bg-cover h-full flex flex-col justify-between gap-2 items-center p-8 rounded-lg shadow-lg hover:shadow-xl duration-500"
@@ -239,7 +268,9 @@
                         </p>
                     </a>
                 </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 lg:hover:w-1/2 xl:pb-8 duration-500">
+                <div
+                    class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 lg:hover:w-1/2 xl:pb-8 duration-500"
+                >
                     <a
                         href="/kategori.html"
                         class="bg-slate-50 hover:bg-grad hover:bg-cover h-full flex flex-col justify-between gap-2 items-center p-8 rounded-lg shadow-lg hover:shadow-xl duration-500"
@@ -265,10 +296,16 @@
         >
             <h3
                 class="text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
+                data-aos="fade-left"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900"
             >
                 Syarat
             </h3>
-            <ul class="flex flex-col lg:w-2/3 gap-4">
+            <ul class="flex flex-col lg:w-2/3 gap-4" 
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="900">
                 <li class="flex items-start gap-2">
                     <img src="/public/image/check.svg" />
                     <p class="text-lg font-semibold text-wrap">
@@ -312,6 +349,9 @@
         <section
             id="alur-pendaftaran"
             class="flex flex-col items-center px-8 lg:px-12 py-8 mt-4 font-syne"
+            data-aos="fade-up"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900"
         >
             <h3
                 class="text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
@@ -328,7 +368,10 @@
                     <div>
                         <h4 class="font-semibold text-lg">Login / Register</h4>
                         <hr class="border-2 border-blue-600 w-3/4" />
-                        <p class="text-slate-600">Daftar atau masukkan akun yang sudah dimiliki untuk masuk ke dashboard beasiswa</p>
+                        <p class="text-slate-600">
+                            Daftar atau masukkan akun yang sudah dimiliki untuk
+                            masuk ke dashboard beasiswa
+                        </p>
                     </div>
                 </div>
                 <div
@@ -336,9 +379,14 @@
                 >
                     <img src="/public/image/step2.svg" />
                     <div>
-                        <h4 class="font-semibold text-lg">Lengkapi Data Diri</h4>
+                        <h4 class="font-semibold text-lg">
+                            Lengkapi Data Diri
+                        </h4>
                         <hr class="border-2 border-blue-800 w-3/4" />
-                        <p class="text-slate-600">Isikan data personal sesuai dengan keadaan sebenarnya</p>
+                        <p class="text-slate-600">
+                            Isikan data personal sesuai dengan keadaan
+                            sebenarnya
+                        </p>
                     </div>
                 </div>
                 <div
@@ -346,9 +394,14 @@
                 >
                     <img src="/public/image/step3.svg" />
                     <div>
-                        <h4 class="font-semibold text-lg">Pilih Jenis Beasiswa</h4>
+                        <h4 class="font-semibold text-lg">
+                            Pilih Jenis Beasiswa
+                        </h4>
                         <hr class="border-2 border-purple-600 w-3/4" />
-                        <p class="text-slate-600">Pilih jenis beasiswa yang akan diajukan dan lengkapi data diri sesuai dengan jenis beasiswa yang dipilih</p>
+                        <p class="text-slate-600">
+                            Pilih jenis beasiswa yang akan diajukan dan lengkapi
+                            data diri sesuai dengan jenis beasiswa yang dipilih
+                        </p>
                     </div>
                 </div>
                 <div
@@ -358,7 +411,10 @@
                     <div>
                         <h4 class="font-semibold text-lg">Buat Pengajuan</h4>
                         <hr class="border-2 border-pink-600 w-3/4" />
-                        <p class="text-slate-600">Buat pengajuan Sesuai dengan jenis beasiswa yang dipilih</p>
+                        <p class="text-slate-600">
+                            Buat pengajuan Sesuai dengan jenis beasiswa yang
+                            dipilih
+                        </p>
                     </div>
                 </div>
                 <div
@@ -368,7 +424,10 @@
                     <div>
                         <h4 class="font-semibold text-lg">Pengumuman</h4>
                         <hr class="border-2 border-pink-800 w-3/4" />
-                        <p class="text-slate-600">Tunggu pengumuman sesuai dengan jadwal yang telah ditentukan dan cek pada pengajuan beasiswa</p>
+                        <p class="text-slate-600">
+                            Tunggu pengumuman sesuai dengan jadwal yang telah
+                            ditentukan dan cek pada pengajuan beasiswa
+                        </p>
                     </div>
                 </div>
             </div>
@@ -376,6 +435,9 @@
         <section
             id="berita"
             class="flex flex-col items-center px-8 lg:px-12 py-8 font-syne"
+            data-aos="fade-right"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900"
         >
             <h3
                 class="text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
@@ -460,16 +522,26 @@
         >
             <h3
                 class="text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 from-33% via-pink-600 via-66% to-purple-600 to-99%"
+                data-aos="fade-right"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900"
             >
                 Cerita Penerima Beasiswa
             </h3>
-            <h4 class="text-4xl">
+            <h4 class="text-4xl"
+            data-aos="fade-right"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900">
                 Kata Mereka Penerima<br />
                 Beasiswa Pemkab
             </h4>
             <div class="flex flex-wrap justify-center gap-8 pt-4">
                 <div
                     class="w-full lg:w-1/4 p-8 rounded-lg shadow-lg flex flex-col justify-between gap-8"
+                    data-aos="fade-down"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900"
+                data-aos-delay="200"
                 >
                     <div class="flex flex-col gap-2">
                         <div class="flex items-center">
@@ -481,7 +553,9 @@
                             <img src="/public/image/chat-icon.svg" />
                         </div>
                         <p class="text-justify text-sm">
-                            Alhamdulillah dengan mendapatkan beasiswa Pemkab Jember ini dapat membantu meringankan biaya perkuliahan saya.
+                            Alhamdulillah dengan mendapatkan beasiswa Pemkab
+                            Jember ini dapat membantu meringankan biaya
+                            perkuliahan saya.
                         </p>
                     </div>
                     <div>
@@ -493,6 +567,10 @@
                 </div>
                 <div
                     class="w-full lg:w-1/4 p-8 rounded-lg shadow-lg flex flex-col justify-between gap-8"
+                    data-aos="fade-down"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900"
+                data-aos-delay="500"
                 >
                     <div class="flex flex-col gap-2">
                         <div class="flex items-center">
@@ -504,7 +582,14 @@
                             <img src="/public/image/chat-icon.svg" />
                         </div>
                         <p class="text-justify text-sm">
-                            Saya merasa sangat bersyukur dan terhormat setelah menerima beasiswa Pemkab Jember Tahap 2. Dukungan ini tidak hanya memberikan kemudahan finansial, tetapi juga menjadi motivasi besar bagi saya dalam mengejar cita-cita pendidikan. Terima kasih kepada Pemkab Jember atas kesempatan ini, saya berkomitmen untuk memanfaatkannya sebaik mungkin dan memberikan kontribusi positif bagi masyarakat.
+                            Saya merasa sangat bersyukur dan terhormat setelah
+                            menerima beasiswa Pemkab Jember Tahap 2. Dukungan
+                            ini tidak hanya memberikan kemudahan finansial,
+                            tetapi juga menjadi motivasi besar bagi saya dalam
+                            mengejar cita-cita pendidikan. Terima kasih kepada
+                            Pemkab Jember atas kesempatan ini, saya berkomitmen
+                            untuk memanfaatkannya sebaik mungkin dan memberikan
+                            kontribusi positif bagi masyarakat.
                         </p>
                     </div>
                     <div>
@@ -516,6 +601,10 @@
                 </div>
                 <div
                     class="w-full lg:w-1/4 p-8 rounded-lg shadow-lg flex flex-col justify-between gap-8"
+                    data-aos="fade-down"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900"
+                data-aos-delay="800"
                 >
                     <div class="flex flex-col gap-2">
                         <div class="flex items-center">
@@ -527,7 +616,9 @@
                             <img src="/public/image/chat-icon.svg" />
                         </div>
                         <p class="text-justify text-sm">
-                            Sangat terbantu dengan adanya Beasiswa Pemkab Jember, karena dapat membantu meringankan biaya yang dikeluarkan orang tua untuk kebutuhan perkuliahan.
+                            Sangat terbantu dengan adanya Beasiswa Pemkab
+                            Jember, karena dapat membantu meringankan biaya yang
+                            dikeluarkan orang tua untuk kebutuhan perkuliahan.
                         </p>
                     </div>
                     <div>
@@ -560,205 +651,473 @@
                 class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
             >
                 <li>
-                    <img src="/public/image/univ01.png" loading="lazy" alt="universitas 1" />
+                    <img
+                        src="/public/image/univ01.png"
+                        loading="lazy"
+                        alt="universitas 1"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ02.png" loading="lazy" alt="universitas 2" />
+                    <img
+                        src="/public/image/univ02.png"
+                        loading="lazy"
+                        alt="universitas 2"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ03.png" loading="lazy" alt="universitas 3" />
+                    <img
+                        src="/public/image/univ03.png"
+                        loading="lazy"
+                        alt="universitas 3"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ04.png" loading="lazy" alt="universitas 4" />
+                    <img
+                        src="/public/image/univ04.png"
+                        loading="lazy"
+                        alt="universitas 4"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ05.png" loading="lazy" alt="universitas 5" />
+                    <img
+                        src="/public/image/univ05.png"
+                        loading="lazy"
+                        alt="universitas 5"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ06.png" loading="lazy" alt="universitas 6" />
+                    <img
+                        src="/public/image/univ06.png"
+                        loading="lazy"
+                        alt="universitas 6"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ07.png" loading="lazy" alt="universitas 7" />
+                    <img
+                        src="/public/image/univ07.png"
+                        loading="lazy"
+                        alt="universitas 7"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ08.png" loading="lazy" alt="universitas 8" />
+                    <img
+                        src="/public/image/univ08.png"
+                        loading="lazy"
+                        alt="universitas 8"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ09.png" loading="lazy" alt="universitas 9" />
+                    <img
+                        src="/public/image/univ09.png"
+                        loading="lazy"
+                        alt="universitas 9"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ10.png" loading="lazy" alt="universitas 10" />
+                    <img
+                        src="/public/image/univ10.png"
+                        loading="lazy"
+                        alt="universitas 10"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ11.png" loading="lazy" alt="universitas 11" />
+                    <img
+                        src="/public/image/univ11.png"
+                        loading="lazy"
+                        alt="universitas 11"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ12.png" loading="lazy" alt="universitas 12" />
+                    <img
+                        src="/public/image/univ12.png"
+                        loading="lazy"
+                        alt="universitas 12"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ13.png" loading="lazy" alt="universitas 13" />
+                    <img
+                        src="/public/image/univ13.png"
+                        loading="lazy"
+                        alt="universitas 13"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ14.png" loading="lazy" alt="universitas 14" />
+                    <img
+                        src="/public/image/univ14.png"
+                        loading="lazy"
+                        alt="universitas 14"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ15.png" loading="lazy" alt="universitas 15" />
+                    <img
+                        src="/public/image/univ15.png"
+                        loading="lazy"
+                        alt="universitas 15"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ16.png" loading="lazy" alt="universitas 16" />
+                    <img
+                        src="/public/image/univ16.png"
+                        loading="lazy"
+                        alt="universitas 16"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ17.png" loading="lazy" alt="universitas 17" />
+                    <img
+                        src="/public/image/univ17.png"
+                        loading="lazy"
+                        alt="universitas 17"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ18.png" loading="lazy" alt="universitas 18" />
+                    <img
+                        src="/public/image/univ18.png"
+                        loading="lazy"
+                        alt="universitas 18"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ19.png" loading="lazy" alt="universitas 19" />
+                    <img
+                        src="/public/image/univ19.png"
+                        loading="lazy"
+                        alt="universitas 19"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ20.png" loading="lazy" alt="universitas 20" />
+                    <img
+                        src="/public/image/univ20.png"
+                        loading="lazy"
+                        alt="universitas 20"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ21.png" loading="lazy" alt="universitas 21" />
+                    <img
+                        src="/public/image/univ21.png"
+                        loading="lazy"
+                        alt="universitas 21"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ22.png" loading="lazy" alt="universitas 22" />
+                    <img
+                        src="/public/image/univ22.png"
+                        loading="lazy"
+                        alt="universitas 22"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ23.png" loading="lazy" alt="universitas 23" />
+                    <img
+                        src="/public/image/univ23.png"
+                        loading="lazy"
+                        alt="universitas 23"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ24.png" loading="lazy" alt="universitas 24" />
+                    <img
+                        src="/public/image/univ24.png"
+                        loading="lazy"
+                        alt="universitas 24"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ25.png" loading="lazy" alt="universitas 25" />
+                    <img
+                        src="/public/image/univ25.png"
+                        loading="lazy"
+                        alt="universitas 25"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ26.png" loading="lazy" alt="universitas 26" />
+                    <img
+                        src="/public/image/univ26.png"
+                        loading="lazy"
+                        alt="universitas 26"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ27.png" loading="lazy" alt="universitas 27" />
+                    <img
+                        src="/public/image/univ27.png"
+                        loading="lazy"
+                        alt="universitas 27"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ28.png" loading="lazy" alt="universitas 28" />
+                    <img
+                        src="/public/image/univ28.png"
+                        loading="lazy"
+                        alt="universitas 28"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ29.png" loading="lazy" alt="universitas 29" />
+                    <img
+                        src="/public/image/univ29.png"
+                        loading="lazy"
+                        alt="universitas 29"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ30.png" loading="lazy" alt="universitas 30" />
+                    <img
+                        src="/public/image/univ30.png"
+                        loading="lazy"
+                        alt="universitas 30"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ31.png" loading="lazy" alt="universitas 31" />
+                    <img
+                        src="/public/image/univ31.png"
+                        loading="lazy"
+                        alt="universitas 31"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ32.png" loading="lazy" alt="universitas 32" />
+                    <img
+                        src="/public/image/univ32.png"
+                        loading="lazy"
+                        alt="universitas 32"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ33.png" loading="lazy" alt="universitas 33" />
+                    <img
+                        src="/public/image/univ33.png"
+                        loading="lazy"
+                        alt="universitas 33"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ34.png" loading="lazy" alt="universitas 34" />
+                    <img
+                        src="/public/image/univ34.png"
+                        loading="lazy"
+                        alt="universitas 34"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ35.png" loading="lazy" alt="universitas 35" />
+                    <img
+                        src="/public/image/univ35.png"
+                        loading="lazy"
+                        alt="universitas 35"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ36.png" loading="lazy" alt="universitas 36" />
+                    <img
+                        src="/public/image/univ36.png"
+                        loading="lazy"
+                        alt="universitas 36"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ37.png" loading="lazy" alt="universitas 37" />
+                    <img
+                        src="/public/image/univ37.png"
+                        loading="lazy"
+                        alt="universitas 37"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ38.png" loading="lazy" alt="universitas 38" />
+                    <img
+                        src="/public/image/univ38.png"
+                        loading="lazy"
+                        alt="universitas 38"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ39.png" loading="lazy" alt="universitas 39" />
+                    <img
+                        src="/public/image/univ39.png"
+                        loading="lazy"
+                        alt="universitas 39"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ40.png" loading="lazy" alt="universitas 40" />
+                    <img
+                        src="/public/image/univ40.png"
+                        loading="lazy"
+                        alt="universitas 40"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ41.png" loading="lazy" alt="universitas 41" />
+                    <img
+                        src="/public/image/univ41.png"
+                        loading="lazy"
+                        alt="universitas 41"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ42.png" loading="lazy" alt="universitas 42" />
+                    <img
+                        src="/public/image/univ42.png"
+                        loading="lazy"
+                        alt="universitas 42"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ43.png" loading="lazy" alt="universitas 43" />
+                    <img
+                        src="/public/image/univ43.png"
+                        loading="lazy"
+                        alt="universitas 43"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ44.png" loading="lazy" alt="universitas 44" />
+                    <img
+                        src="/public/image/univ44.png"
+                        loading="lazy"
+                        alt="universitas 44"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ45.png" loading="lazy" alt="universitas 45" />
+                    <img
+                        src="/public/image/univ45.png"
+                        loading="lazy"
+                        alt="universitas 45"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ46.png" loading="lazy" alt="universitas 46" />
+                    <img
+                        src="/public/image/univ46.png"
+                        loading="lazy"
+                        alt="universitas 46"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ47.png" loading="lazy" alt="universitas 47" />
+                    <img
+                        src="/public/image/univ47.png"
+                        loading="lazy"
+                        alt="universitas 47"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ48.png" loading="lazy" alt="universitas 48" />
+                    <img
+                        src="/public/image/univ48.png"
+                        loading="lazy"
+                        alt="universitas 48"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ49.png" loading="lazy" alt="universitas 49" />
+                    <img
+                        src="/public/image/univ49.png"
+                        loading="lazy"
+                        alt="universitas 49"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ50.png" loading="lazy" alt="universitas 50" />
+                    <img
+                        src="/public/image/univ50.png"
+                        loading="lazy"
+                        alt="universitas 50"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ51.png" loading="lazy" alt="universitas 51" />
+                    <img
+                        src="/public/image/univ51.png"
+                        loading="lazy"
+                        alt="universitas 51"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ52.png" loading="lazy" alt="universitas 52" />
+                    <img
+                        src="/public/image/univ52.png"
+                        loading="lazy"
+                        alt="universitas 52"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ53.png" loading="lazy" alt="universitas 53" />
+                    <img
+                        src="/public/image/univ53.png"
+                        loading="lazy"
+                        alt="universitas 53"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ54.png" loading="lazy" alt="universitas 54" />
+                    <img
+                        src="/public/image/univ54.png"
+                        loading="lazy"
+                        alt="universitas 54"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ55.png" loading="lazy" alt="universitas 55" />
+                    <img
+                        src="/public/image/univ55.png"
+                        loading="lazy"
+                        alt="universitas 55"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ56.png" loading="lazy" alt="universitas 56" />
+                    <img
+                        src="/public/image/univ56.png"
+                        loading="lazy"
+                        alt="universitas 56"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ57.png" loading="lazy" alt="universitas 57" />
+                    <img
+                        src="/public/image/univ57.png"
+                        loading="lazy"
+                        alt="universitas 57"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ58.png" loading="lazy" alt="universitas 58" />
+                    <img
+                        src="/public/image/univ58.png"
+                        loading="lazy"
+                        alt="universitas 58"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ59.png" loading="lazy" alt="universitas 59" />
+                    <img
+                        src="/public/image/univ59.png"
+                        loading="lazy"
+                        alt="universitas 59"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ60.png" loading="lazy" alt="universitas 60" />
+                    <img
+                        src="/public/image/univ60.png"
+                        loading="lazy"
+                        alt="universitas 60"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ61.png" loading="lazy" alt="universitas 61" />
+                    <img
+                        src="/public/image/univ61.png"
+                        loading="lazy"
+                        alt="universitas 61"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ62.png" loading="lazy" alt="universitas 62" />
+                    <img
+                        src="/public/image/univ62.png"
+                        loading="lazy"
+                        alt="universitas 62"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ63.png" loading="lazy" alt="universitas 63" />
+                    <img
+                        src="/public/image/univ63.png"
+                        loading="lazy"
+                        alt="universitas 63"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ64.png" loading="lazy" alt="universitas 64" />
+                    <img
+                        src="/public/image/univ64.png"
+                        loading="lazy"
+                        alt="universitas 64"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ65.png" loading="lazy" alt="universitas 65" />
+                    <img
+                        src="/public/image/univ65.png"
+                        loading="lazy"
+                        alt="universitas 65"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ66.png" loading="lazy" alt="universitas 66" />
+                    <img
+                        src="/public/image/univ66.png"
+                        loading="lazy"
+                        alt="universitas 66"
+                    />
                 </li>
                 <li>
-                    <img src="/public/image/univ67.png" loading="lazy" alt="universitas 67" />
+                    <img
+                        src="/public/image/univ67.png"
+                        loading="lazy"
+                        alt="universitas 67"
+                    />
                 </li>
             </ul>
         </section>
@@ -784,7 +1143,8 @@
                         ><img src="/public/image/more-icon.svg" />
                     </button>
                     <div class="h-0 overflow-x-hidden duration-500">
-                        Beasiswa untuk semester 1-8, sesuai syarat kategori beasiswa yang dilamar.
+                        Beasiswa untuk semester 1-8, sesuai syarat kategori
+                        beasiswa yang dilamar.
                     </div>
                 </div>
                 <div
@@ -794,8 +1154,7 @@
                     <button
                         class="w-full flex justify-between items-center font-semibold"
                     >
-                        <span class="text-left"
-                            >
+                        <span class="text-left">
                             Surat rekomendasi didapat dari mana?</span
                         ><img src="/public/image/more-icon.svg" />
                     </button>
@@ -810,13 +1169,14 @@
                     <button
                         class="w-full flex justify-between items-center font-semibold"
                     >
-                        <span class="text-left"
-                            >
-                            Apakah boleh mendaftar jika berkulaih di luar Kab. jember?</span
+                        <span class="text-left">
+                            Apakah boleh mendaftar jika berkulaih di luar Kab.
+                            jember?</span
                         ><img src="/public/image/more-icon.svg" />
                     </button>
                     <div class="h-0 overflow-x-hidden duration-500">
-                        Diperbolehkan dengan syarat WNI berstatus KTP di Kab. Jember.
+                        Diperbolehkan dengan syarat WNI berstatus KTP di Kab.
+                        Jember.
                     </div>
                 </div>
                 <div
@@ -826,13 +1186,13 @@
                     <button
                         class="w-full flex justify-between items-center font-semibold"
                     >
-                        <span class="text-left"
-                            >
+                        <span class="text-left">
                             Untuk pengumpulan persyaratan melalui apa?</span
                         ><img src="/public/image/more-icon.svg" />
                     </button>
                     <div class="h-0 overflow-x-hidden duration-500">
-                        Semua proses pengajuan pendaftaran beasiswa melalui website resmi beasiswa pemkab Jember.
+                        Semua proses pengajuan pendaftaran beasiswa melalui
+                        website resmi beasiswa pemkab Jember.
                     </div>
                 </div>
                 <div
@@ -842,13 +1202,14 @@
                     <button
                         class="w-full flex justify-between items-center font-semibold"
                     >
-                        <span class="text-left"
-                            >
-                            Apakah beasiswa ini hanya untuk program studi tertentu?</span
+                        <span class="text-left">
+                            Apakah beasiswa ini hanya untuk program studi
+                            tertentu?</span
                         ><img src="/public/image/more-icon.svg" />
                     </button>
                     <div class="h-0 overflow-x-hidden duration-500">
-                        Beasiswa pemkab Jember berlaku untuk semua program studi.
+                        Beasiswa pemkab Jember berlaku untuk semua program
+                        studi.
                     </div>
                 </div>
                 <div
@@ -858,13 +1219,14 @@
                     <button
                         class="w-full flex justify-between items-center font-semibold"
                     >
-                        <span class="text-left"
-                            >
-                            Bagaimana cara saya dapat memantau perkembangan atau status aplikasi beasiswa saya?</span
+                        <span class="text-left">
+                            Bagaimana cara saya dapat memantau perkembangan atau
+                            status aplikasi beasiswa saya?</span
                         ><img src="/public/image/more-icon.svg" />
                     </button>
                     <div class="h-0 overflow-x-hidden duration-500">
-                        Semua proses pendaftaran sampai pengumuman dapat dipantau di web pemkab Jember dashboard mahasiswa.
+                        Semua proses pendaftaran sampai pengumuman dapat
+                        dipantau di web pemkab Jember dashboard mahasiswa.
                     </div>
                 </div>
                 <div
@@ -874,13 +1236,16 @@
                     <button
                         class="w-full flex justify-between items-center font-semibold"
                     >
-                        <span class="text-left"
-                            >
-                            Bagaimana beasiswa ini akan dibayarkan, apakah langsung ke institusi pendidikan atau kepada penerima beasiswa?</span
+                        <span class="text-left">
+                            Bagaimana beasiswa ini akan dibayarkan, apakah
+                            langsung ke institusi pendidikan atau kepada
+                            penerima beasiswa?</span
                         ><img src="/public/image/more-icon.svg" />
                     </button>
                     <div class="h-0 overflow-x-hidden duration-500 text-wrap">
-                        Beasiswa diberikan kepada penerima beasiswa dan salurkan secara langsung ke rekening perguruan tinggi pengelola program beasiswa Pemkab Jember.
+                        Beasiswa diberikan kepada penerima beasiswa dan salurkan
+                        secara langsung ke rekening perguruan tinggi pengelola
+                        program beasiswa Pemkab Jember.
                     </div>
                 </div>
             </div>
@@ -923,22 +1288,22 @@
                     <div class="flex gap-2">
                         <a
                             href="https://www.instagram.com/dispendik.jember/"
-                            class="flex justify-center items-center px-3 py-3 bg-white rounded-full"
+                            class="flex justify-center items-center px-3 py-3 bg-white rounded-full hover:shadow-xl duration-300"
                             ><img src="/public/image/instagram.svg"
                         /></a>
                         <a
                             href="https://twitter.com/diknasjember"
-                            class="flex justify-center items-center px-3 py-3 bg-white rounded-full"
+                            class="flex justify-center items-center px-3 py-3 bg-white rounded-full hover:shadow-xl duration-300"
                             ><img src="/public/image/twitter.svg"
                         /></a>
                         <a
                             href="https://www.youtube.com/channel/UCoGNlbM_8QMv7XCTPiVxMbQ/featured"
-                            class="flex justify-center items-center px-3 py-3 bg-white rounded-full"
+                            class="flex justify-center items-center px-3 py-3 bg-white rounded-full hover:shadow-xl duration-300"
                             ><img src="/public/image/youtube.svg"
                         /></a>
                         <a
                             href="https://www.facebook.com/dispendik.jember/"
-                            class="flex justify-center items-center px-3 py-3 bg-white rounded-full"
+                            class="flex justify-center items-center px-3 py-3 bg-white rounded-full hover:shadow-xl duration-300"
                             ><img src="/public/image/facebook.svg"
                         /></a>
                     </div>
@@ -954,12 +1319,26 @@
                     <div
                         class="flex flex-col items-center md:items-start gap-1"
                     >
-                        <a href="/" class="text-lg text-slate-500">Beranda</a>
-                        <a href="/berita.html" class="text-lg text-slate-500"
+                        <a
+                            href="/"
+                            class="text-lg text-slate-500 hover:text-slate-800 duration-300"
+                            >Beranda</a
+                        >
+                        <a
+                            href="/berita.html"
+                            class="text-lg text-slate-500 hover:text-slate-800 duration-300"
                             >Berita</a
                         >
-                        <a href="/about.html" class="text-lg text-slate-500">Tentang</a>
-                        <a href="https://www.instagram.com/dispendik.jember/" class="text-lg text-slate-500">Kontak</a>
+                        <a
+                            href="/about.html"
+                            class="text-lg text-slate-500 hover:text-slate-800 duration-300"
+                            >Tentang</a
+                        >
+                        <a
+                            href="https://www.instagram.com/dispendik.jember/"
+                            class="text-lg text-slate-500 hover:text-slate-800 duration-300"
+                            >Kontak</a
+                        >
                     </div>
                 </aside>
                 <aside
@@ -973,35 +1352,51 @@
                     <div
                         class="flex flex-col items-center md:items-start gap-1"
                     >
-                        <a href="#" class="text-lg text-slate-500"
+                        <a
+                            href="#"
+                            class="text-lg text-slate-500 hover:text-slate-800 duration-300"
                             >Kemendikbud</a
                         >
-                        <a href="#" class="text-lg text-slate-500"
-                            >
+                        <a
+                            href="#"
+                            class="text-lg text-slate-500 hover:text-slate-800 duration-300"
+                        >
                             Diskominfo</a
                         >
-                        <a href="#" class="text-lg text-slate-500"
-                            >
+                        <a
+                            href="#"
+                            class="text-lg text-slate-500 hover:text-slate-800 duration-300"
+                        >
                             PPID Kab. Jember</a
                         >
-                        <a href="#" class="text-lg text-slate-500"
-                            >
+                        <a
+                            href="#"
+                            class="text-lg text-slate-500 hover:text-slate-800 duration-300"
+                        >
                             Pemkab Jember</a
                         >
-                        <a href="#" class="text-lg text-slate-500"
-                            >
+                        <a
+                            href="#"
+                            class="text-lg text-slate-500 hover:text-slate-800 duration-300"
+                        >
                             Maklumat Dinas Pendidikan</a
                         >
-                        <a href="#" class="text-lg text-slate-500"
-                            >
+                        <a
+                            href="#"
+                            class="text-lg text-slate-500 hover:text-slate-800 duration-300"
+                        >
                             Visi Misi Dinas Pendidikan</a
                         >
-                        <a href="#" class="text-lg text-slate-500"
-                            >
+                        <a
+                            href="#"
+                            class="text-lg text-slate-500 hover:text-slate-800 duration-300"
+                        >
                             Motto Pelayanan</a
                         >
-                        <a href="#" class="text-lg text-slate-500"
-                            >
+                        <a
+                            href="#"
+                            class="text-lg text-slate-500 hover:text-slate-800 duration-300"
+                        >
                             SOP Dinas Pendidikan</a
                         >
                     </div>
