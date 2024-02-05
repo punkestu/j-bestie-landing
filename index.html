@@ -1136,7 +1136,7 @@
                             >Untuk semester berapa beasiswa tersebut?</span
                         ><img src="/public/image/more-icon.svg" />
                     </button>
-                    <div class="h-0 overflow-x-hidden duration-500">
+                    <div class="max-h-0 overflow-y-hidden duration-500">
                         Beasiswa untuk semester 1-8, sesuai syarat kategori
                         beasiswa yang dilamar.
                     </div>
@@ -1152,7 +1152,7 @@
                             Surat rekomendasi didapat dari mana?</span
                         ><img src="/public/image/more-icon.svg" />
                     </button>
-                    <div class="h-0 overflow-x-hidden duration-500">
+                    <div class="max-h-0 overflow-y-hidden duration-500">
                         Surat rekomendasi dapat meminta ke perguruan tinggi.
                     </div>
                 </div>
@@ -1168,7 +1168,7 @@
                             jember?</span
                         ><img src="/public/image/more-icon.svg" />
                     </button>
-                    <div class="h-0 overflow-x-hidden duration-500">
+                    <div class="max-h-0 overflow-y-hidden duration-500">
                         Diperbolehkan dengan syarat WNI berstatus KTP di Kab.
                         Jember.
                     </div>
@@ -1184,7 +1184,7 @@
                             Untuk pengumpulan persyaratan melalui apa?</span
                         ><img src="/public/image/more-icon.svg" />
                     </button>
-                    <div class="h-0 overflow-x-hidden duration-500">
+                    <div class="max-h-0 overflow-y-hidden duration-500">
                         Semua proses pengajuan pendaftaran beasiswa melalui
                         website resmi beasiswa pemkab Jember.
                     </div>
@@ -1201,7 +1201,7 @@
                             tertentu?</span
                         ><img src="/public/image/more-icon.svg" />
                     </button>
-                    <div class="h-0 overflow-x-hidden duration-500">
+                    <div class="max-h-0 overflow-y-hidden duration-500">
                         Beasiswa pemkab Jember berlaku untuk semua program
                         studi.
                     </div>
@@ -1218,7 +1218,7 @@
                             status aplikasi beasiswa saya?</span
                         ><img src="/public/image/more-icon.svg" />
                     </button>
-                    <div class="h-0 overflow-x-hidden duration-500">
+                    <div class="max-h-0 overflow-y-hidden duration-500">
                         Semua proses pendaftaran sampai pengumuman dapat
                         dipantau di web pemkab Jember dashboard mahasiswa.
                     </div>
@@ -1236,7 +1236,7 @@
                             penerima beasiswa?</span
                         ><img src="/public/image/more-icon.svg" />
                     </button>
-                    <div class="h-0 overflow-x-hidden duration-500 text-wrap">
+                    <div class="max-h-0 overflow-y-hidden duration-500 text-wrap">
                         Beasiswa diberikan kepada penerima beasiswa dan salurkan
                         secara langsung ke rekening perguruan tinggi pengelola
                         program beasiswa Pemkab Jember.
@@ -1412,8 +1412,9 @@
             }
             function toggleFaq(e) {
                 const nextSibling = e.children[1]
-                nextSibling.classList.toggle('h-0')
-                nextSibling.classList.toggle('h-10')
+                nextSibling.classList.toggle('max-h-0')
+                nextSibling.classList.toggle('max-h-44')
+                nextSibling.classList.toggle('lg:max-h-10')
             }
         </script>
     </body>
