@@ -12,7 +12,8 @@ module.exports = {
                 grad: "url('/public/image/gradient.png')",
             },
             animation: {
-                'infinite-scroll': 'infinite-scroll 80s linear infinite',
+                'infinite-scroll': 'infinite-scroll 120s linear infinite',
+                'infinite-scroll-8s': 'infinite-scroll 8s linear infinite',
             },
             keyframes: {
                 'infinite-scroll': {
